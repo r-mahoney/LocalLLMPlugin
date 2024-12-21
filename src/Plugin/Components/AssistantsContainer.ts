@@ -542,7 +542,7 @@ export class AssistantsContainer {
 				});
 			});
 		//assistant.tool_resources?.file_search?.vector_store_ids
-		const tempSetting = new Setting(parentContainer)
+		new Setting(parentContainer)
 			.setName("Temperature")
 			.setDesc(
 				"Defaults to 1. What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or top_p but not both."
@@ -555,7 +555,7 @@ export class AssistantsContainer {
 				});
 			});
 
-		const topPSetting = new Setting(parentContainer)
+		new Setting(parentContainer)
 			.setName("Temperature")
 			.setDesc(
 				"Defaults to 1. What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. We generally recommend altering this or top_p but not both."
